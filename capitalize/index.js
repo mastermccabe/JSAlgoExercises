@@ -10,10 +10,15 @@
 function capitalize(str) {
   let strArr = str.split(' ')
   let returnStr = ''
-  const words = []
+
+  // for (let word of strArr) {
+  //   strArr[word] = word[0].toUpperCase() + word.slice(1)
+  //   console.log(strArr[word])
+  // }
   for (let word in strArr) {
     strArr[word] = strArr[word][0].toUpperCase() + strArr[word].slice(1)
   }
+
 
   console.log(strArr.join(' '))
   return strArr.join(' ')

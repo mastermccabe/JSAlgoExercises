@@ -8,9 +8,13 @@
 //   palindrome("abcdefg") === false
 
 function palindrome(str) {
-  return str.split('').every((char, i) => {
-    return char === str[str.length - i - 1]
-  })
+  let newStr = str.split('').reverse().join('')
+  return str === newStr
+
+
+  // return str.split('').every((char, i) => {
+  //   return char === str[str.length - i - 1]
+  // })
 
 
   // return t or f
